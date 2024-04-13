@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -278,22 +279,22 @@ nav .btn:hover{
     }
     .text-box{
         position: absolute;
-        bottom: 110px;
-        margin-left: 50px;
+        bottom: 10px;
+        margin-left: 10px;
         margin-top: 290px;
     }
     .text-box p{
         font-size: 25px;
         font-weight: 450;
         margin-left: 10px;
-        color: rgb(232, 34, 97);
+        color: rgb(136, 34, 232);
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
     }
     .text-box h1{
         font-size: 80px;
         line-height: 100px;
-        -webkit-text-stroke: 1px #f3eee8;
+        -webkit-text-stroke: 1px #f90808;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: transparent;
         position: relative;
@@ -318,7 +319,7 @@ nav .btn:hover{
         font-size: 22px;
         font-weight: 100;
         font-weight: 10px;
-        color: rgb(232, 241, 243);
+        color: rgb(40, 5, 238);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .image-box img{
