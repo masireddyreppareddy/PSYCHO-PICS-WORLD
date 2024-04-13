@@ -1,176 +1,387 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 body{
-    background-image: url(images/R.jpeg);
-    background-size: cover;
+    background-image: url(images/reddy999.jpg);
+    height: 600px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-
-}   
+    background-size: cover;
+}
+nav{
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+}
 .logo img{
-
-  height: 100px;
-  width: 100px;
-  position: relative;
-  top: 0;
-  left: 0;  
+    padding-left: 10px;
+    padding-top: 0px;
+    height: 110px;
+    width: 110px;
+}
+nav ul{
+    margin-right: 50px;
+    float: right;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
-.card{
-    width: 350px;
-    height: 430px;
-    perspective: 1500px;
+nav li{
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#chk{
+nav a{
+    color: rgb(181, 48, 48);
+    font-weight: bold; 
+    justify-content: space-between;
+    padding: 50px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.btn{
+    height: 20px;
+    width: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    border-radius: 10%;
+    
+}
+nav .btn{
+    text-decoration: rgb(242, 235, 235);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 90px;
+    height: 25px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 5);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(253, 243, 241);
+    font-weight: bold;
+    margin-left: 40px;
+    transition: .5s;
+}
+nav .btn:hover{
+    background: rgb(234, 135, 13);
+    color: rgb(249, 241, 241);
+}
+.checkButton{
+    font-size: 30px;
+    color:black;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
     display: none;
 }
-#chk:checked ~.content{
-    animation: 2s animate;
-   transform: rotateX(180deg);
-
+.myCheckBox{
+    display: none;
 }
-@keyframes animate{
-    0%{
-        transform: translateZ(0px);
-    }
-    50%{
-        transform: translateZ(100px);
-    }
-    100%{
-        transform: rotateX(180deg);
-    }
-}
-.content{
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    box-shadow: 0 5px 15px rgb(148, 118, 118);
-    transition: transform 1s cubic-bezier(0.075,0,0.85,1);
-    border-radius: 8px;
-}
-.front,.back{
+.home{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(243, 239, 239, 0.94);
-    background-repeat: #fff;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    perspective: 1500px;
-    border-radius: 8px; 
-}
-.back{
-    transform: rotateX(180deg);
-}
-.inner{
-    height: 100%;
-    padding: 1.5em;
-    transform: translateZ(80px) scale(1);
-
-}
-h2{
-    position: absolute;
-    top: 50px;
-    left: 30px;
-    font-size: 28px;
-    color: rgb(244, 18, 75);
-    font-weight: bolder;
-}
-p{
-    font-size: 15px;
-    padding: 7px;
-    margin-top: 70px;
-    text-align: justify;
-    line-height: 1.4em;
-}
-input[type=text],
-input[type=possword],
-input[type=email]{
-    width: 95%;
-    height: 40px;
-    padding: 15px;
-    margin: 10px 8px;
-    box-sizing: border-box;
-    color: #000;
-    background: #5bb9be;
-    border: none;
-    outline: black;
-    border-radius: 4px;
-}  
-input[type=text]::placeholder,
-input[type=possword]::placeholder,
-input[type=email]::placeholder{
-    color: rgb(186, 95, 194);
-}  
-.front label{
-    padding: 8px 6px;
-    font-size: 16px;
-    color: red;
-    float: right;
-    cursor: pointer;
+    bottom: 0;
     
 }
-.back label{
-   
+.text-box{
     position: absolute;
-    bottom: 40px;
-    width: 90%;
-    font-size: 16px;
-    text-align: center;
-    color: red;
-    cursor: pointer;
+    bottom: 15%;
+    margin-left: 30px;
+    margin-top: 290px;
 }
-button{
+.text-box p{
+    font-size: 35px;
+    font-weight: 450;
+    margin-left: 10px;
+    color: rgb(243, 249, 250);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.text-box h1{
+    font-size: 170px;
+    line-height: 160px;
+    -webkit-text-stroke: 1px #f3eee8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: transparent;
+    position: relative;
+}
+.text-box h1::before{
+    content: "PSYCHO";
     position: absolute;
-    right: 30px;
-    width: 82%;
-    padding: 7px;
-    color: white;
-    background: red;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 4px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: .3s;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: rgb(59, 235, 238);
+    border-inline-start-style:  solid rgb(26, 177, 188);
+    transition: 1s ease-in-out;
+
 }
-@keyframes glowing {
-    0% {
-      background-color: #2ba805;
-      box-shadow: 0 0 5px #2ba805;
+.text-box h1:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 10px rgb(251, 161, 17));
+}
+
+.text-box h3{
+    font-size: 22px;
+    font-weight: 100;
+    font-weight: 10px;
+    color: rgb(232, 241, 243);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.image-box img{
+    display: none;
+    
+}
+.inform a{
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items:center ;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 40%;
+    font-size: 30px;
+    color: rgb(255, 114, 14);
+    margin: 30px 25px 30px 0;
+    
+
+}
+.inform a.whatsapp:hover{
+    background: linear-gradient(#5FFC7B,#28D146);
+    color: rgb(253, 254, 252);
+    box-shadow: 0 0 25px rgb(10, 251, 10);
+    
+}
+.inform a.facebook:hover{
+    background: linear-gradient(#0165E1,#17A9FD);
+    color: rgb(253, 254, 252);
+    box-shadow: 0 0 25px rgb(1, 101, 225);
+    
+}
+.inform a.instagram:hover{
+    background:linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d,#F56040,#F77737,#FCAF45,#FFDC80,#FFFFFF );
+    color: rgb(253, 254, 252);
+    box-shadow: 0 0 25px rgb(251, 10, 179);
+    
+}
+.inform a.twitter:hover{
+    background: rgb(27, 168, 255);
+    color: rgb(252, 251, 251);
+    box-shadow: 0 0 25px rgb(27, 168, 255);
+    
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #a14b4b;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan,0 0 50px cyan,
+    0 0 100px cyan;
+
+}
+
+@media screen and (max-width:952px){
+    .logo img{
+        height: 110px;
+        width: 110px;
+        padding-left: 30px;
     }
-    50% {
-      background-color: #49e819;
-      box-shadow: 0 0 20px #49e819;
+    body{
+        background-image: url(images/reddy999.jpg);
+       
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
     }
-    100% {
-      background-color: #2ba805;
-      box-shadow: 0 0 5px #2ba805;
-   }
+    nav ul li a{
+        font-size: 16px;
+    }
 }
-button {
-    animation: glowing 1300ms infinite;
+@media screen and (max-width:800px){
+    .checkButton{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:transparent;
+        top: 40px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        border-radius: 40px;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 24px;
+        color: black;
+        text-align: center;
+    }
+    nav ul .btn{
+        text-align: center;
+    }
+    nav ul .btn{
+        height: 50px;
+        width: 120px;
+         font-weight: bold;
+        background: transparent;
+        border: 4px solid rgb(255, 255, 5);
+        cursor: pointer;
+        font-size: 1.57em;
+        color: rgb(14, 14, 14);
+        font-weight: bold;
+        transition: .10s;
+        margin-right: 40px;
+    }
+    nav ul a .btn:hover{
+        background: rgb(203, 154, 89);
+        color: rgb(23, 21, 21);
+    }
+    a:hover{
+        color: red;
+    }
+    .myCheckBox:checked ~ ul{
+        left: 0;
+    }
+
 }
-.front button{
-    bottom: 10%;
-}
-.back button{
-    bottom: 20%;
-}
-button:hover{
-    background-color: rgb(186, 171, 171);
+@media screen and (max-width:800px){
+    .home{
+        position: absolute;
+        bottom: 0;
+        
+    }
+    .text-box{
+        position: absolute;
+        bottom: 110px;
+        margin-left: 50px;
+        margin-top: 290px;
+    }
+    .text-box p{
+        font-size: 25px;
+        font-weight: 450;
+        margin-left: 10px;
+        color: rgb(232, 34, 97);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    }
+    .text-box h1{
+        font-size: 80px;
+        line-height: 100px;
+        -webkit-text-stroke: 1px #f3eee8;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: transparent;
+        position: relative;
+    }
+    .text-box h1::before{
+        content: "PSYCHO";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        color: rgb(59, 235, 238);
+        border-inline-start-style:  solid rgb(26, 177, 188);
+        transition: 1s ease-in-out;
+    
+    }
+    .text-box h1:hover::before{
+        width: 100%;
+        filter: drop-shadow(0 0 10px rgb(251, 161, 17));
+    }
+    
+    .text-box h3{
+        font-size: 22px;
+        font-weight: 100;
+        font-weight: 10px;
+        color: rgb(232, 241, 243);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .image-box img{
+        display: none;
+        
+    }
+    .inform a{
+        display: inline-flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items:center ;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border: 2px solid #0ef;
+        border-radius: 40%;
+        font-size: 30px;
+        color: rgb(255, 114, 14);
+        margin: 30px 25px 30px 0;
+        
+    
+    }
+    .inform a.whatsapp:hover{
+        background: linear-gradient(#5FFC7B,#28D146);
+        color: rgb(253, 254, 252);
+        box-shadow: 0 0 25px rgb(10, 251, 10);
+        
+    }
+    .inform a.facebook:hover{
+        background: linear-gradient(#0165E1,#17A9FD);
+        color: rgb(253, 254, 252);
+        box-shadow: 0 0 25px rgb(1, 101, 225);
+        
+    }
+    .inform a.instagram:hover{
+        background:linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d,#F56040,#F77737,#FCAF45,#FFDC80,#FFFFFF );
+        color: rgb(253, 254, 252);
+        box-shadow: 0 0 25px rgb(251, 10, 179);
+        
+    }
+    .inform a.twitter:hover{
+        background: rgb(27, 168, 255);
+        color: rgb(252, 251, 251);
+        box-shadow: 0 0 25px rgb(27, 168, 255);
+        
+    }
+    .btn-box{
+        display: inline-block;
+        padding: 12px 28px;
+        background: #0ef;
+        border-radius: 40px;
+        text-decoration: none;
+        border-radius: 30px;
+        color: #a14b4b;
+        letter-spacing: 1px;
+        font-weight: 400;
+    
+    }
+    .btn-box:hover{
+        box-shadow: 0 0 5px cyan,
+        0 0 25px cyan,0 0 50px cyan,
+        0 0 100px cyan;
+    
+    }
+
 }
